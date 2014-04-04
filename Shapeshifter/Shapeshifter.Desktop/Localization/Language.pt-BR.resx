@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string"/>
+              <xsd:attribute name="type" type="xsd:string"/>
+              <xsd:attribute name="mimetype" type="xsd:string"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string"/>
+              <xsd:attribute name="name" type="xsd:string"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
+              <xsd:attribute ref="xml:space"/>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required"/>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BalloonTipClipboardDisturbanceContent" xml:space="preserve">
+    <value>Shapeshifter não pode acessar a área de transferência porque alguma outro processo a está usando. Tente desligar conexões remotas ou o seu firewall e tente novamente.</value>
+  </data>
+  <data name="BalloonTipClipboardDisturbanceTitle" xml:space="preserve">
+    <value>Algum outro processo está utilizando a área de transferência</value>
+  </data>
+  <data name="BalloonTipPendingUpdateContent" xml:space="preserve">
+    <value>O Shapeshifter foi atualizado para a versão {0}. Clique nesse balão para aplicar as mudanças agora. Se você decidir não atualizar agora, as mudanças serão aplicadas na próxima vez que o Shapeshifter reinicializar.</value>
+  </data>
+  <data name="BalloonTipPendingUpdateTitle" xml:space="preserve">
+    <value>Atualização pendente</value>
+  </data>
+  <data name="BalloonTipSettingsContent" xml:space="preserve">
+    <value>Clique com botão direito do mouse no ícone da barra de ferramentas para configurações e mais.</value>
+  </data>
+  <data name="BalloonTipSettingsTitle" xml:space="preserve">
+    <value>Configurações do Shapeshifter</value>
+  </data>
+  <data name="BalloonTipTranslationHelpNeededContent" xml:space="preserve">
+    <value>Nós queremos fazer o Shapeshifter disponível em todas as línguas possíveis, e nós temos apenas {0} frases não traduzidas em {1}. Clique com o botão direito do mouse no ícone da barra de tarefas e então clique em "{2}" para começar a traduzir.</value>
+  </data>
+  <data name="BalloonTipTranslationHelpNeededTitle" xml:space="preserve">
+    <value>Nós precisamos da sua ajuda para traduzir!</value>
+  </data>
+  <data name="MessageBoxCrowdinContent" xml:space="preserve">
+    <value>Nós usamos o Crowdin para traduzir o nosso programa e nosso site. Você será redirecionado para o projeto da Flamefusion no Crowdin, onde você pode encontrar e criar traduções para o Shapeshifter.</value>
+  </data>
+  <data name="MessageBoxCrowdinTitle" xml:space="preserve">
+    <value>Você será redirecionado para o Crowdin</value>
+  </data>
+  <data name="MessageBoxIncinerationInitiatedContent" xml:space="preserve">
+    <value>A inceneracao foi ativada agora e esta em andamento
+
+Um total de {0} memória megabytes foi libertado.
+
+O Shapeshifter agora consome aproximadamente {1} megabytes de memória.</value>
+  </data>
+  <data name="MessageBoxIncinerationInitiatedTitle" xml:space="preserve">
+    <value>Incineração iniciada</value>
+  </data>
+  <data name="MessageBoxRestartShapeshifterContent" xml:space="preserve">
+    <value>Você precisa reiniciar o Shapeshifter para essa configuração ser aplicada.</value>
+  </data>
+  <data name="MessageBoxRestartShapeshifterTitle" xml:space="preserve">
+    <value>Reinicie o Shapeshifter</value>
+  </data>
+  <data name="MessageBoxSeeSettingsContent" xml:space="preserve">
+    <value>Muito bem, você terminou!
+
+Contudo, por favor olhe as suas configurações. Você será apresentado a ela agora, mas você pode optar por fecha-la.
+
+Note que você pode acessar essas configurações mais tarde clicando com o botão direito do mouse no ícone do Shapeshifter na barra de ferramentas.</value>
+  </data>
+  <data name="MessageBoxSeeSettingsTitle" xml:space="preserve">
+    <value>Pronto!</value>
+  </data>
+  <data name="MessageBoxShapeshifterUninstalledContent" xml:space="preserve">
+    <value>O Shapeshifter detectou que uma desinstalação foi executada. Todos os arquivos restantes que estavam em uso durante o processo de instalação foram removidos.</value>
+  </data>
+  <data name="MessageBoxShapeshifterUninstalledTitle" xml:space="preserve">
+    <value>Desinstalação do Shapeshifter completa</value>
+  </data>
+  <data name="SettingsClose" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="SettingsDesignAndLayoutColorAeroContent" xml:space="preserve">
+    <value>Use as cores Aero do painel de personalização do Windows (Windows Vista ou superior)</value>
+  </data>
+  <data name="SettingsDesignAndLayoutColorBlue" xml:space="preserve">
+    <value>Azul</value>
+  </data>
+  <data name="SettingsDesignAndLayoutColorContent" xml:space="preserve">
+    <value>Esta é a cor usada para itens selecionados, em volta das bordas e como sombras.</value>
+  </data>
+  <data name="SettingsDesignAndLayoutColorGreen" xml:space="preserve">
+    <value>Verde</value>
+  </data>
+  <data name="SettingsDesignAndLayoutColorRed" xml:space="preserve">
+    <value>Vermelho</value>
+  </data>
+  <data name="SettingsDesignAndLayoutColorTitle" xml:space="preserve">
+    <value>Cor</value>
+  </data>
+  <data name="SettingsDesignAndLayoutTitle" xml:space="preserve">
+    <value>Design &amp; layout</value>
+  </data>
+  <data name="SettingsMiscellaneousInteractionSettingsContent" xml:space="preserve">
+    <value>Aqui você pode configurar como você quer interagir com o Shapeshifter.</value>
+  </data>
+  <data name="SettingsMiscellaneousInteractionSettingsExternalMode" xml:space="preserve">
+    <value>Modo externo (melhor para usar com o mouse)</value>
+  </data>
+  <data name="SettingsMiscellaneousInteractionSettingsIntegratedMode" xml:space="preserve">
+    <value>Modo integrado (melhor para usar com CTRL + C e CTRL + V)</value>
+  </data>
+  <data name="SettingsMiscellaneousInteractionSettingsMixedMode" xml:space="preserve">
+    <value>Modo misto</value>
+  </data>
+  <data name="SettingsMiscellaneousInteractionSettingsTitle" xml:space="preserve">
+    <value>Configurações de interação</value>
+  </data>
+  <data name="SettingsMiscellaneousStartupSettingsContent" xml:space="preserve">
+    <value>Aqui é onde você pode configurar o modo de inicialização do Shapeshifter.</value>
+  </data>
+  <data name="SettingsMiscellaneousStartupSettingsStartWithWindows" xml:space="preserve">
+    <value>Executar o Shapeshifter quando o Windows inicializar</value>
+  </data>
+  <data name="SettingsMiscellaneousStartupSettingsTitle" xml:space="preserve">
+    <value>Configurações de inicialização</value>
+  </data>
+  <data name="SettingsMiscellaneousTitle" xml:space="preserve">
+    <value>Diversos</value>
+  </data>
+  <data name="SettingsPerformanceAndStabilityMemoryConsumptionContent" xml:space="preserve">
+    <value>Aqui é onde você pode configurar o quanto de memória o Shapeshifter ira consumir, habilitando ou desabilitando a tecnologia de incineração da Flamefusion.
+
+Note que enquanto habilitado isso vai diminuir muito o consumo de memória, e pode retardar ou gerar um comportamento inesperado ao Shapeshifter.</value>
+  </data>
+  <data name="SettingsPerformanceAndStabilityMemoryConsumptionTitle" xml:space="preserve">
+    <value>Consumo de memória</value>
+  </data>
+  <data name="SettingsPerformanceAndStabilityTitle" xml:space="preserve">
+    <value>Desempenho e estabilidade</value>
+  </data>
+  <data name="SettingsPerformanceAndStabilityUseIncineration" xml:space="preserve">
+    <value>Use a tecnologia de incineração da Flamefusion para liberar memória</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="TrayIconContextMenuExit" xml:space="preserve">
+    <value>Sair</value>
+  </data>
+  <data name="TrayIconContextMenuFeedback" xml:space="preserve">
+    <value>Envie seus comentários</value>
+  </data>
+  <data name="TrayIconContextMenuFlamefusionFacebookPage" xml:space="preserve">
+    <value>Página da Flamefusion no Facebook</value>
+  </data>
+  <data name="TrayIconContextMenuSettings" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="TrayIconContextMenuShapeshifterFacebookPage" xml:space="preserve">
+    <value>Página do Shapeshifter no Facebook</value>
+  </data>
+  <data name="TrayIconContextMenuTranslate" xml:space="preserve">
+    <value>Ajude a traduzir o Shapeshifter</value>
+  </data>
+  <data name="WelcomeContent" xml:space="preserve">
+    <value>Você está a apenas alguns segundos de experimentar o melhor gerenciador de área de transferência do mundo. Contudo, é muito importante que nó tenhamos a sua atenção por um momento. Shapeshifter pode ser usado através de diferentes métodos. Por favor selecione abaixo o método que mais se encaixa com você.</value>
+  </data>
+  <data name="WelcomeExternalModeContent" xml:space="preserve">
+    <value>Modo externo permite que você gerencie itens clicando no ícone do Shapeshifter na taskbar (Windows 7 ou superior).</value>
+  </data>
+  <data name="WelcomeExternalModeTitle" xml:space="preserve">
+    <value>Modo externo</value>
+  </data>
+  <data name="WelcomeGetStarted" xml:space="preserve">
+    <value>Comece agora!</value>
+  </data>
+  <data name="WelcomeIntegratedModeContent" xml:space="preserve">
+    <value>Modo integrado permite que você cole e gerencie itens usando CTRL + V (mantendo pressionado).</value>
+  </data>
+  <data name="WelcomeIntegratedModeTitle" xml:space="preserve">
+    <value>Modo integrado</value>
+  </data>
+  <data name="WelcomeMixedModeContent" xml:space="preserve">
+    <value>O modo misto combina o modo integrado com o modo externo (Windows 7 ou superior).</value>
+  </data>
+  <data name="WelcomeMixedModeTitle" xml:space="preserve">
+    <value>Modo misto</value>
+  </data>
+  <data name="WelcomeTitle" xml:space="preserve">
+    <value>Bem-vindo ao Shapeshifter!</value>
+  </data>
+</root>

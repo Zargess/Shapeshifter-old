@@ -1,0 +1,69 @@
+﻿<Application x:Class="Shapeshifter.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Startup="App_Startup"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" ShutdownMode="OnExplicitShutdown" Exit="Application_Exit">
+    <Application.Resources>
+
+        <FontFamily x:Key="CuprumFont">./Fonts/#Cuprum, Segoe UI, Arial</FontFamily>
+
+        <Color x:Key="AeroColor" A="255" R="37" G="97" B="163" />
+
+        <LinearGradientBrush x:Key="UnselectedBackgroundBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFFFFF" Offset="1" />
+            <GradientStop Color="#fafafa" Offset="0" />
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="SelectedBackgroundBrush" EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFFFFF" Offset="0" />
+            <GradientStop Color="#fafafa" Offset="1" />
+        </LinearGradientBrush>
+
+        <BitmapImage x:Key="TextClipboardItemIcon">/Shapeshifter;component/Images/TextIcon.png</BitmapImage>
+
+        <BitmapImage x:Key="FileClipboardItemParentLocationIcon">/Shapeshifter;component/Images/FolderIcon.png</BitmapImage>
+
+        <Style x:Key="ClipboardItemList" TargetType="{x:Type ListBox}">
+            <Setter Property="Width" Value="Auto" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+
+        <Style TargetType="{x:Type TabItem}">
+            <Setter Property="Padding" Value="10,5" />
+        </Style>
+
+        <Style x:Key="ClipboardListBoxItem" TargetType="{x:Type ListBoxItem}">
+            <Setter Property="OverridesDefaultStyle" Value="true" />
+            <Setter Property="FontFamily" Value="{StaticResource CuprumFont}" />
+            <Setter Property="FontWeight" Value="ExtraLight" />
+            <Setter Property="Width" Value="614" />
+            <Setter Property="Height" Value="79" />
+            <Setter Property="Margin" Value="6" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="IsHitTestVisible" Value="True" />
+            <Setter Property="SnapsToDevicePixels" Value="True" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="False">
+                    <Setter Property="BorderBrush" Value="#FFd0d0d0" />
+                    <Setter Property="Effect" Value="{x:Null}" />
+                </Trigger>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="BorderBrush">
+                        <Setter.Value>
+                            <SolidColorBrush Color="{DynamicResource AeroColor}"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Effect">
+                        <Setter.Value>
+                            <DropShadowEffect Opacity="0.5" BlurRadius="3" Direction="0" RenderingBias="Quality"
+                                              ShadowDepth="0" Color="{DynamicResource AeroColor}" />
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="ClipboardListBoxItemGrid" TargetType="{x:Type Grid}">
+            <Setter Property="Width" Value="614" />
+        </Style>
+
+    </Application.Resources>
+</Application>

@@ -1,0 +1,91 @@
+﻿<ListBoxItem x:Class="Shapeshifter.Desktop.Controls.Clipboard.FileCollectionClipboardItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:DataTypes="clr-namespace:Shapeshifter.Desktop.Functionality.Clipboard.DataTypes" mc:Ignorable="d" x:Name="thisElement"
+             d:DataContext="{d:DesignInstance Type=DataTypes:ClipboardFileCollection}" Style="{StaticResource ClipboardListBoxItem}" SnapsToDevicePixels="True">
+    <ListBoxItem.Template>
+        <ControlTemplate TargetType="ListBoxItem">
+            <Grid>
+                <Rectangle StrokeThickness="{TemplateBinding BorderThickness}" Effect="{TemplateBinding Effect}" Stroke="{TemplateBinding BorderBrush}" Fill="White"/>
+                <Grid Margin="1" Style="{StaticResource ClipboardListBoxItemGrid}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="79" />
+                        <ColumnDefinition Width="1" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Fill="#f6f6f6" Width="79" Height="79" />
+                    <Label FontFamily="{StaticResource CuprumFont}" FontWeight="Light" FontSize="40" Name="Icon" Width="auto"
+                           Height="Auto" HorizontalAlignment="Center" VerticalAlignment="Center" Content="{Binding PathCount}">
+                        <Label.Foreground>
+                            <SolidColorBrush Color="{DynamicResource AeroColor}"/>
+                        </Label.Foreground>
+                    </Label>
+                    <Rectangle Grid.Column="1" Fill="#d0d0d0" Width="1" Height="79" />
+                    <Rectangle Name="ContentGradient" Grid.Column="2" Height="79">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FFFFFF" Offset="0" />
+                                <GradientStop Color="#fafafa" Offset="1" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Grid Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <ItemsControl Name="IconCollections" ItemsSource="{Binding IconCollections}" Height="32">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid Margin="10,0,0,0">
+                                        <Image Width="32" Height="32" SnapsToDevicePixels="True" VerticalAlignment="Center"
+                                               HorizontalAlignment="Left" Source="{Binding Icon}" Stretch="None" />
+                                        <Grid HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                                            <Grid.Background>
+                                                <SolidColorBrush Color="{DynamicResource AeroColor}"/>
+                                            </Grid.Background>
+                                            <Label Padding="5,2" Margin="0" FontSize="11" Foreground="White" Content="{Binding Count}" />
+                                        </Grid>
+                                    </Grid>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <StackPanel Orientation="Horizontal" />
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                        </ItemsControl>
+                        <Grid VerticalAlignment="Bottom" Margin="10,2,12,8" Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image VerticalAlignment="Center" Width="16" Height="16"
+                                   Source="/Shapeshifter;component/Images/FolderIcon.png" />
+                            <TextBlock Margin="5,0,0,0" Grid.Column="1" VerticalAlignment="Center" Foreground="#afafaf"
+                                       FontSize="14" Text="{Binding ParentLocation}" />
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsSelected" Value="False">
+                    <Setter TargetName="ContentGradient" Property="Fill" Value="{StaticResource UnselectedBackgroundBrush}" />
+                    <Setter TargetName="IconCollections" Property="Opacity" Value="0.5" />
+                    <Setter TargetName="Icon" Property="Foreground" Value="#f777" />
+                </Trigger>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter TargetName="ContentGradient" Property="Fill" Value="{StaticResource SelectedBackgroundBrush}" />
+                    <Setter TargetName="IconCollections" Property="Opacity" Value="1" />
+                    <Setter TargetName="Icon" Property="Foreground">
+                        <Setter.Value>
+                            <SolidColorBrush Color="{DynamicResource AeroColor}"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </ListBoxItem.Template>
+</ListBoxItem>
